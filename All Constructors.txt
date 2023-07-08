@@ -1,0 +1,82 @@
+
+// DEFAULT CONSTRUCTOR???????
+
+// public class Main
+// {
+// 	public static void main(String[] args) {
+// 	    Sum obj = new Sum();
+		
+// 	}
+// }
+// class Sum{
+//     Sum(){
+//         System.out.println("Called");
+//     }
+// }
+
+
+
+// Parameter Constructor.......................................
+
+
+// public class Main
+// {
+// 	public static void main(String[] args) {
+// 	    Sum obj = new Sum("Piyush" , 21);
+// 	    obj.display();
+		
+// 	}
+// }
+// class Sum{
+//     String name;
+//     int age;
+//     Sum(String n, int a){
+//         name = n;
+//         age = a;
+//     }
+//     void display(){
+//     System.out.println(name + " " + age);
+        
+//     }
+// }
+
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Sum obj = new Sum();
+	    Sum obj2 = new Sum(obj);
+	    
+	   
+	    
+		
+	}
+}
+class Sum{
+    int a;
+    int b;
+    Sum(){
+        a=10;
+        b=10;
+        System.out.println(a+b);
+    }
+    Sum(Sum x){
+        a=x.a;
+        b=x.b;
+        System.out.println(a+b);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
